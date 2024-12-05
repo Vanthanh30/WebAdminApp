@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease; /* Hiệu ứng mượt khi thay đổi nền */
+}
+
+body:hover {
+    background-color: #e8e8e8; /* Thay đổi nhẹ nền khi hover */
+}
+
+.login-container {
+    width: 320px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #FFA64D;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.image img {
+    width: 150px;
+    height: auto;
+    align-items: center;
+    transition: transform 0.3s ease; /* Hiệu ứng mượt khi hover ảnh */
+}
+
+.login-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    transition: color 0.3s ease; /* Hiệu ứng thay đổi màu tiêu đề */
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng khi nhập */
+}
+
+.login-container input::placeholder {
+    color: #6c757d;
+    font-style: italic; /* Font nghiêng placeholder */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD9B3;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hiệu ứng khi hover */
+}
+.login-container button:active {
+    transform: translateY(0); /* Trở lại vị trí ban đầu khi click */
+}
+
+/* Bootstrap utility classes for margins and spacing */
+.container {
+    padding: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

@@ -1,0 +1,50 @@
+﻿@model List<WebAdminApp.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Danh sách đã duyệt";
+    Layout = "_Layout";
+}
+
+<div class="col-md-9 ms-sm-auto col-lg-10 px-4">
+    <main class="main-content">
+        <h3 class="mb-4">Danh sách công thức đã duyệt</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Số thứ tự</th>
+                        <th>Tên công thức</th>
+                        <th>Người tạo</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        int index = 1;
+                        foreach (var recipe in Model)
+                        {
+                            <tr>
+                                <td>@index</td>
+                                <td>@recipe.name</td>
+                                <td>@recipe.description</td>
+                                <td>
+                                    <span class="badge bg-success">Đã duyệt</span>
+                                </td>
+                            </tr>
+                            index++;
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center">Không có công thức nào đã duyệt.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <a href="@Url.Action("PendingApproval", "Recipe")" class="btn btn-secondary">Quay lại</a>
+    </main>
+</div>

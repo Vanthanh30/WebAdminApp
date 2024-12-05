@@ -1,0 +1,22 @@
+﻿@model WebAdminApp.Models.Admin
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<h1>Create Admin</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label for="Username">Username:</label>
+        <input asp-for="Username" />
+    </div>
+    <div>
+        <label for="Email">Email:</label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <button type="submit">Create</button>
+</form>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebAdminApp.Models.Admin>
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<h1>Admin Accounts</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var admin in Model)
+        {
+            <tr>
+                <td>@admin.Username</td>
+                <td>@admin.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create">Create New Admin</a>

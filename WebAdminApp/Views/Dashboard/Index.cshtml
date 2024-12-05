@@ -1,0 +1,60 @@
+﻿@model DashboardViewModel
+
+<div class="col-md-9 ms-sm-auto col-lg-10 px-4 giaodien3" id="giaodien3">
+    <main class="main-content">
+        <h3 class="mb-4">Thống kê công thức nấu ăn</h3>
+
+        <!-- Thống kê tổng quan -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="fas fa-utensils fa-2x me-3 text-primary"></i>
+                        <div>
+                            <h5 class="card-title">Tổng số công thức</h5>
+                            <p class="card-text">@Model.TotalRecipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="fas fa-users fa-2x me-3 text-success"></i>
+                        <div>
+                            <h5 class="card-title">Số tài khoản</h5>
+                            <p class="card-text">@Model.TotalAccounts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="fas fa-check-circle fa-2x me-3 text-warning"></i>
+                        <div>
+                            <h5 class="card-title">Số công thức Active</h5>
+                            <p class="card-text">@Model.ActiveRecipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thống kê theo trạng thái -->
+        <h4>Thống kê công thức theo trạng thái</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <i class="fas fa-times-circle fa-2x me-3 text-danger"></i>
+                        <div>
+                            <h5 class="card-title">Số công thức không hoạt động</h5>
+                            <p class="card-text">@Model.InactiveRecipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

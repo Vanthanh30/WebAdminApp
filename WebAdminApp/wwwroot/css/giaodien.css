@@ -1,0 +1,200 @@
+/* Định dạng ảnh đại diện */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  /* Phần sidebar */
+  .sidebar {
+    background-color: #ffa500;
+    min-height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar .nav-link {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #ff8c00;
+  }
+  
+  .btn-logout {
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    max-width: 120px;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    margin-left: 40px;
+  }
+  
+  .btn-logout:hover {
+    background-color: #e46911;
+  }
+  
+  /* Giaodien1 */
+  .giaodien1 {
+    background-color: #ffffff; /* Màu nền nhẹ */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    border: none; /* Loại bỏ viền */
+  }
+  
+  .giaodien1 .main-content {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .giaodien1 .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .giaodien1 .form-control:focus {
+    border-color: #ffa500;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+    outline: none;
+  }
+  
+  .giaodien1 .form-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Giaodien2 */
+  .giaodien2 {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: none; /* Loại bỏ viền */
+    overflow-x: auto;
+  }
+  
+  .giaodien2 h1,
+  .giaodien2 h2,
+  .giaodien2 h3 {
+    color: #333;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .giaodien2 .table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .giaodien2 .table th {
+    background-color: #ffa500;
+    color: white;
+    text-align: center;
+  }
+  
+  .giaodien2 .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  /* Giaodien3 */
+/* Giaodien3 */
+.giaodien3 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin-top to provide space above */
+    margin-bottom: 40px; /* Ensure there's space at the bottom */
+  }
+  
+  .giaodien3 .main-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .giaodien3 .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .giaodien3 .btn {
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .giaodien3 .btn-warning {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .giaodien3 .btn-warning:hover {
+    background-color: #ff8c00;
+  }
+  
+  .giaodien3 .table {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .giaodien3 .table th {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .giaodien3 .table td,
+  .giaodien3 .table th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  .giaodien3 .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .giaodien3 .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .giaodien3 .btn-success:hover,
+  .giaodien3 .btn-danger:hover {
+    opacity: 0.9;
+  }
+  
+  .d-none {
+    display: none !important;
+  }
+  
